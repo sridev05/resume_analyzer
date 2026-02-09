@@ -9,6 +9,7 @@ Stop guessing whether your resume is good enough. This project analyzes resumes,
 * **Resume Analyzer** – Extracts structured insights from resumes
 * **Skill Extractor** – Identifies technical and soft skills automatically
 * **JD Matcher** – Compares resume with job description and gives a match score
+* **Multi‑Resume Ranking** – Ranks multiple resumes against a single JD
 * **Resume Rewriter** – Improves resume bullet points using AI
 * **Cover Letter Generator** – Creates customized cover letters
 * **Radar Chart Visualization** – Visual comparison of skill strengths
@@ -131,5 +132,6 @@ GEMINI_API_KEY=your_api_key_here
 ## 🧠 Final Note
 
 If you can’t explain this project clearly in an interview, that’s on you — not the project. Learn it properly.
+
 
 
