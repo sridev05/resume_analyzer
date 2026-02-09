@@ -127,11 +127,8 @@ GEMINI_API_KEY=your_api_key_here
 * PDF export
 * ATS keyword optimization
 
----
 
-## 🧠 Final Note
 
-If you can’t explain this project clearly in an interview, that’s on you — not the project. Learn it properly.
 
 
 
