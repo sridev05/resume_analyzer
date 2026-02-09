@@ -6,7 +6,6 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-
 import { callGemini } from "./gemini.js";
 import { parseFile, cleanupFile } from "./parser.js";
 import { extractFeatures, atsScore, jdKeywordMatch } from "./helpers.js";
