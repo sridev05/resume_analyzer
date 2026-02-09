@@ -110,6 +110,14 @@ GEMINI_API_KEY=your_api_key_here
 ```
 
 ---
+## 📌 Use Cases
+
+* Resume screening for recruiters
+* Job seekers optimizing resumes
+* ATS‑style resume matching
+* Interview preparation
+
+---
 
 
 ## 📈 Future Improvements
@@ -124,6 +132,7 @@ GEMINI_API_KEY=your_api_key_here
 ## 🧠 Final Note
 
 If you can’t explain this project clearly in an interview, that’s on you — not the project. Learn it properly.
+
 
 
 
