@@ -14,6 +14,7 @@ export function extractFeatures(text) {
   };
 }
 
+
 export function atsScore(features) {
   let score = 40;
   score += Math.min(20, Math.floor(features.wordCount / 100));
