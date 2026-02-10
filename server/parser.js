@@ -33,7 +33,8 @@ export async function parseFile(filePath, mimeType) {
       throw new Error("File appears to be empty");
     }
     return text;
-  } catch (err) {
+
+    } catch (err) {
     if (err.message.includes("not found") || err.message.includes("empty")) {
       throw err;
     }
