@@ -1,3 +1,4 @@
+
 export function extractFeatures(text) {
   const wordCount = (text.match(/\S+/g) || []).length;
   const sections = (text.match(/(experience|education|skills|projects|certifications|summary)/gi) || []);
