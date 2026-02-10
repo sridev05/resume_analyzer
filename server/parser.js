@@ -3,6 +3,7 @@ import fs from "fs";
 import pdfParse from "pdf-parse";
 import mammoth from "mammoth";
 
+
 export async function parseFile(filePath, mimeType) {
   // Check if file exists
   if (!fs.existsSync(filePath)) {
