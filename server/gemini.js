@@ -9,6 +9,22 @@ if (!GEMINI_API_KEY) {
 } else {
   console.log("✅ GEMINI_API_KEY loaded (length:", GEMINI_API_KEY.length, "characters)");
 }
+export async function callGemini(prompt, maxTokens = 800) {
+  if (!GEMINI_API_KEY) {
+    console.warn("GEMINI_API_KEY not found in environment variables");
+    return { 
+      text: `{
+  "overall_score": 65,
+  "summary": "API key not configured. Please set GEMINI_API_KEY in your server/.env file.",
+  "strengths": ["Resume structure appears complete"],
+  "weaknesses": ["Unable to perform AI analysis - API key missing"],
+  "missing_important_keywords": [],
+  "suggestions": ["Configure GEMINI_API_KEY environment variable in server/.env file"],
+  "best_fit_roles": ["Software Engineer"],
+  "estimated_salary_range": "N/A"
+}`
+    };
+  }
 
 
 //update
