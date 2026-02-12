@@ -4,11 +4,7 @@ dotenv.config();
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY?.trim();
 
-if (!GEMINI_API_KEY) {
-  console.error("❌ GEMINI_API_KEY missing in .env file");
-} else {
-  console.log("✅ GEMINI_API_KEY loaded (length:", GEMINI_API_KEY.length, "characters)");
-}
+
 export async function callGemini(prompt, maxTokens = 800) {
   if (!GEMINI_API_KEY) {
     console.warn("GEMINI_API_KEY not found in environment variables");
