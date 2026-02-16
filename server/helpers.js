@@ -1,5 +1,10 @@
-
-
+export function extractFeatures(text) {
+  const wordCount = (text.match(/\S+/g) || []).length;
+  const sections = (text.match(/(experience|education|skills|projects|certifications|summary)/gi) || []);
+  const skills = (text.match(/(python|java|c\+\+|c#|javascript|react|node|sql|aws|docker|kubernetes|tensorflow|pytorch|git)/gi) || []);
+  const actionVerbs = (text.match(/\b(led|developed|designed|implemented|optimized|built|created|improved)\b/gi) || []);
+  const hasContact = /(@|gmail|phone|tel|linkedin|http)/i.test(text);
+  
   return {
     wordCount,
     sectionsCount: [...new Set(sections.map(s => s.toLowerCase()))].length,
